@@ -4,15 +4,72 @@ import type { url } from 'inspector';
 <template>
   <div class="root">
     <div class="container">
-      <a href="#" class="btn">Hover me</a>
+      <div>
+        <a href="#" class="btn1">
+          <span class="front">Hover</span>
+          <span class="center"></span>
+          <span class="back">Here</span>
+        </a>
+      </div>
+      <div>
+        <a href="#" class="btn2">Hover me</a>
+      </div>
     </div>
   </div>
 </template>
 
 <style lang="sass" scoped>
-.btn
+
+.btn1
+  display: inline-block
+  width: 118px
+  height: 42px
+  text-align: center
+  transform-style: preserve-3d
+  perspective: 1000px
+  transform-origin: center center
+
+  span
+    position: absolute
+    top: 0
+    left: 0
+    display: block
+    height: 100%
+    width: 100%
+    text-align: center
+    line-height: 42px
+    font-size: 16px
+    background-color: rgba(200, 200, 200, .10)
+    transform-style: preserve-3d
+    backface-visibility: hidden
+    border-radius: 3px
+    text-transform: uppercase
+    color: white
+    transition: .75s
+
+  .front
+    transform: rotateX(0deg) translateZ(20px)
+
+  .back
+    transform: rotateX(180deg) translateZ(20px)
+
+  .center
+    background: linear-gradient(to left, #c31a5b, #7129bd)
+    backface-visibility: visible
+
+  &:hover
+    .front
+      transform: rotateX(-180deg) translateZ(20px)
+    .back
+      transform: rotateX(0deg) translateZ(20px)
+    .center
+      transform: rotateX(-180deg) translateZ(0px)
+
+
+.btn2
   position: relative
   display: inline-block
+  margin: 10px 0
   padding: 5px 10px
   font-family: Roboto, Arial, sans-serif
   font-size: 22px
