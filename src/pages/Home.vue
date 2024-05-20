@@ -4,15 +4,19 @@ import NeonTextScreen from '@/components/NeonTextScreen.vue';
 import AnimatedEyesScreen from '@/components/AnimatedEyesScreen.vue';
 import FunnelScreen from '@/components/FunnelScreen.vue';
 import PhoneScreen from '@/components/PhoneScreen.vue';
+import RollerScreen from '@/components/RollerScreen.vue';
+import PushApartScreen1 from '@/components/PushApartScreen1.vue';
 </script>
 
 <template>
   <div class="root">
-    <!-- PushApartScreen /-->
-    <!-- NeonTextScreen / -->
-    <!-- FunnelScreen / -->
+    <PushApartScreen />
+    <NeonTextScreen />
     <PhoneScreen />
+    <FunnelScreen />
     <!-- AnimatedEyesScreen / -->
+    <PushApartScreen1 />
+    <RollerScreen />
     <!-- div class="container">
       <div>
         <a href="#" class="btn1">

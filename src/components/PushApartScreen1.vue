@@ -13,10 +13,10 @@ onMounted(() => {
 <template>
   <div class="root">
     <div ref="wrapper" class="h2">
-      Believe
-      <span>Believe</span>
-      <span>Believe</span>
-      <span>in yourself</span>
+      Love
+      <span>Love</span>
+      <span>Love</span>
+      <span>and live</span>
     </div>
   </div>
 </template>
@@ -91,12 +91,12 @@ onMounted(() => {
     width: calc(100% - 10px)
     margin-left: 5px
     padding-left: 20px
-    font-size: 0.25em
+    font-size: 0.2em
     font-weight: 500
-    letter-spacing: 0.7em
+    letter-spacing: 0.3em
     text-align: center
     color: #000
-    background: #ff0
+    background: violet
     transform: translateY(-50%) scaleY(0)
     transition: 0.5s
     animation: showEffect 1s ease 1s 1

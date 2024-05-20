@@ -34,6 +34,7 @@ import { ref, onMounted } from 'vue';
 
 
 .root
+  position: relative
   display: flex
   justify-content: center
   align-items: center
