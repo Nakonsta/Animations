@@ -1,9 +1,17 @@
-import type { url } from 'inspector';
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import PushApartScreen from '@/components/FirstScreen.vue';
+import NeonTextScreen from '@/components/NeonTextScreen.vue';
+import AnimatedEyesScreen from '@/components/AnimatedEyesScreen.vue';
+import FunnelScreen from '@/components/FunnelScreen.vue';
+</script>
 
 <template>
   <div class="root">
-    <div class="container">
+    <!-- PushApartScreen /-->
+    <!-- NeonTextScreen / -->
+    <FunnelScreen />
+    <!-- AnimatedEyesScreen / -->
+    <!-- div class="container">
       <div>
         <a href="#" class="btn1">
           <span class="front">Hover</span>
@@ -14,7 +22,7 @@ import type { url } from 'inspector';
       <div>
         <a href="#" class="btn2">Hover me</a>
       </div>
-    </div>
+    </div -->
   </div>
 </template>
 
