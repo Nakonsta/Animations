@@ -3,13 +3,15 @@ import PushApartScreen from '@/components/FirstScreen.vue';
 import NeonTextScreen from '@/components/NeonTextScreen.vue';
 import AnimatedEyesScreen from '@/components/AnimatedEyesScreen.vue';
 import FunnelScreen from '@/components/FunnelScreen.vue';
+import PhoneScreen from '@/components/PhoneScreen.vue';
 </script>
 
 <template>
   <div class="root">
     <!-- PushApartScreen /-->
     <!-- NeonTextScreen / -->
-    <FunnelScreen />
+    <!-- FunnelScreen / -->
+    <PhoneScreen />
     <!-- AnimatedEyesScreen / -->
     <!-- div class="container">
       <div>
