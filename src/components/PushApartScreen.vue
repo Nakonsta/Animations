@@ -79,6 +79,12 @@ onMounted(() => {
   text-transform: uppercase
   transform: translate(-50%, -50%)
 
+  @media (max-width: 425px)
+    font-size: 5em
+
+  @media (max-width: 360px)
+    font-size: 4.5em
+
   span:nth-child(1)
     position: absolute
     top: 0

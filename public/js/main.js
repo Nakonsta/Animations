@@ -1,8 +1,10 @@
 const images = [
-  'https://st.peopletalk.ru/userfiles/images/20152707121018%281%29.jpg',
-  'https://wp-s.ru/wallpapers/0/1/349107171341490/fotoapparat-dlya-semki-v-professionalnyx-fotostudiyax.jpg',
+  './images/1.jpg',
+  './images/2.jpg',
+  './images/5.jpg',
+  './images/4.jpg',
 ];
-const texts = [['UNLOCKED'], ['OFFBEAT'], ['ASTERISKS'], ['LOVE IS LOVE']];
+const texts = [[''], [''], [''], ['']];
 
 rgbKineticSlider = new rgbKineticSlider({
   // images and content sources

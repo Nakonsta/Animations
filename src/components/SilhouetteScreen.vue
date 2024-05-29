@@ -27,6 +27,7 @@ onMounted(() => {});
   justify-content: center
   align-items: center
   min-height: 100vh
+  padding: 2px 0
 
   @media (max-width: 575px)
     height: 50vh
@@ -42,6 +43,16 @@ onMounted(() => {});
   position: relative
   width: 765px
   height: 530px
+
+  &::after
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+    border: 1px solid #fff
+
   @media (max-width: 767px)
     width: 100%
     height: 400px
@@ -61,9 +72,6 @@ onMounted(() => {});
   height: 100%
   object-fit: cover
   mix-blend-mode: screen
-
-  // @media (max-width: 767px)
-  //   object-fit: contain
 
 .video
   position: absolute
