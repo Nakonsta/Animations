@@ -7,13 +7,13 @@ const eyeRight = ref<null | HTMLElement>(null);
 
 onMounted(() => {
   root.value?.addEventListener('mousemove', (event) => {
-    [eyeLeft.value, eyeRight.value].forEach((eye) => {
-      let x = eye?.getBoundingClientRect()?.left + eye?.clientWidth / 2;
-      let y = eye?.getBoundingClientRect()?.top + eye?.clientWidth / 2;
-      let raidan = Math.atan2(event.pageX - x, event.pageY - y);
-      let rot = raidan * (180 / Math.PI) * -1 + 270;
-      eye.style.transform = `rotate(${rot}deg)`;
-    });
+    // [eyeLeft.value, eyeRight.value].forEach((eye) => {
+    //   let x = eye?.getBoundingClientRect()?.left + eye?.clientWidth / 2;
+    //   let y = eye?.getBoundingClientRect()?.top + eye?.clientWidth / 2;
+    //   let raidan = Math.atan2(event.pageX - x, event.pageY - y);
+    //   let rot = raidan * (180 / Math.PI) * -1 + 270;
+    //   eye.style.transform = `rotate(${rot}deg)`;
+    // });
   });
 });
 </script>

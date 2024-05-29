@@ -1,0 +1,53 @@
+.kinetic .slider {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  text-transform: uppercase !important;
+}
+
+@media screen and (min-width: 53em) {
+  .kinetic .slider {
+    height: 100vh;
+  }
+}
+
+.kinetic .rgbKineticSlider {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.kinetic canvas {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+}
+
+.kinetic nav a {
+  text-decoration: none;
+  position: absolute;
+  top: 46vh;
+  z-index: 1;
+  padding: 20px;
+  transition: 0.3s;
+  background: black;
+  color: white;
+}
+
+.kinetic nav a.next {
+  right: 10vw;
+}
+
+.kinetic nav a.prev {
+  left: 10vw;
+}
+
+@media screen and (max-width: 53em) {
+  .kinetic nav a {
+    top: auto;
+    bottom: 3rem;
+  }
+}

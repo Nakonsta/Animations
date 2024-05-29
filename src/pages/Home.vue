@@ -1,22 +1,33 @@
 <script setup lang="ts">
-import PushApartScreen from '@/components/FirstScreen.vue';
+import PlaneScreen from '@/components/PlaneScreen.vue';
+import PushApartScreen from '@/components/PushApartScreen.vue';
 import NeonTextScreen from '@/components/NeonTextScreen.vue';
 import AnimatedEyesScreen from '@/components/AnimatedEyesScreen.vue';
 import FunnelScreen from '@/components/FunnelScreen.vue';
 import PhoneScreen from '@/components/PhoneScreen.vue';
 import RollerScreen from '@/components/RollerScreen.vue';
 import PushApartScreen1 from '@/components/PushApartScreen1.vue';
+import SilhouetteScreen from '@/components/SilhouetteScreen.vue';
+import CityRainScreen from '@/components/CityRainScreen.vue';
+import ForestRain from '@/components/ForestRain.vue';
+import GsapScreen from '@/components/GsapScreen.vue';
 </script>
 
 <template>
   <div class="root">
+    <PlaneScreen />
     <PushApartScreen />
-    <NeonTextScreen />
+    <ForestRain />
+    <SilhouetteScreen />
+    <CityRainScreen />
+    <GsapScreen />
+    <!-- NeonTextScreen />
     <PhoneScreen />
     <FunnelScreen />
-    <!-- AnimatedEyesScreen / -->
     <PushApartScreen1 />
-    <RollerScreen />
+    <RollerScreen / -->
+    <!-- AnimatedEyesScreen / -->
+
     <!-- div class="container">
       <div>
         <a href="#" class="btn1">
