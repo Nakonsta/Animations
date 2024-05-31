@@ -15,6 +15,16 @@ onMounted(() => {
 <template>
   <div ref="planeRoot" class="root">
     <div ref="layer" class="layer">
+      <div class="texts">
+        <div class="title">
+          Начните путешествие в<br />
+          <div class="content">
+            <span class="accent first">Исландию</span><br />
+            <span class="accent second">Исландию</span><br />
+          </div>
+          прямо сейчас
+        </div>
+      </div>
       <img src="/img/plane2.png" alt="plane" class="img" />
     </div>
     <section class="section"></section>
@@ -29,6 +39,12 @@ onMounted(() => {
 </template>
 
 <style lang="sass" scoped>
+@keyframes wave
+  0%, 100%
+    clip-path: polygon(0% 39%, 9% 41%, 18% 45%, 24% 50%, 31% 55%, 39% 60%, 46% 62%, 53% 62%, 62% 59%, 68% 54%, 76% 50%, 83% 49%, 90% 50%, 97% 52%, 100% 54%, 100% 100%, 0% 100%)
+  50%
+    clip-path: polygon(0 49%, 5% 53%, 11% 57%, 16% 59%, 28% 64%, 38% 57%, 41% 58%, 48% 56%, 54% 58%, 64% 62%, 71% 66%, 79% 68%, 86% 66%, 92% 64%, 100% 62%, 100% 100%, 0% 100%)
+
 .root
   font-family: 'Poppins', Arial, sans-serif
   background-color: #020b1e
@@ -39,6 +55,34 @@ onMounted(() => {
   width: 100%
   height: 100vh
   background: #020b1e
+
+.texts
+  position: absolute
+  top: 50%
+  left: 50%
+  font-family: "Roboto", sans-serif
+  font-size: 44px
+  font-weight: 700
+  letter-spacing: 0.05em
+  text-align: center
+  color: #fff
+  transform: translate(-50%, -50%)
+
+  @media (max-width: 1024px)
+    font-size: 36px
+
+  @media (max-width: 768px)
+    transform: translate(-20%, -50%)
+
+  @media (max-width: 575px)
+    z-index: 3
+    top: auto
+    left: 0
+    right: 0
+    bottom: 10%
+    width: 100%
+    font-size: 24px
+    transform: translate(0, 0)
 
   // &::before
   //   content: ''
@@ -145,4 +189,28 @@ onMounted(() => {
 
   @media (max-width: 350px)
     font-size: 55px
+
+.content
+  position: relative
+
+.accent
+  position: absolute
+  top: 50%
+  left: 50%
+  font-size: 120px
+  color: transparent
+  transform: translate(-50%, -50%)
+  @media (max-width: 1024px)
+    font-size: 80px
+
+  @media (max-width: 768px)
+    font-size: 60px
+
+  &.first
+    color: transparent
+    -webkit-text-stroke: 2px #42bce6
+
+  &.second
+    color: #42bce6
+    animation: wave 4s ease-in-out infinite
 </style>

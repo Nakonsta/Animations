@@ -11,16 +11,18 @@ import SilhouetteScreen from '@/components/SilhouetteScreen.vue';
 import CityRainScreen from '@/components/CityRainScreen.vue';
 import ForestRain from '@/components/ForestRain.vue';
 import GsapScreen from '@/components/GsapScreen.vue';
+import BlobsScreen from '@/components/BlobsScreen.vue';
+import TextsScreen from '@/components/TextsScreen.vue';
 </script>
 
 <template>
   <div class="root">
-    <PlaneScreen />
-    <PushApartScreen />
-    <ForestRain />
-    <SilhouetteScreen />
+    <BlobsScreen title="Прогуляйтесь по&nbsp;дождливому Рейкьявику" />
     <CityRainScreen />
-    <GsapScreen />
+    <PushApartScreen />
+    <TextsScreen />
+    <SilhouetteScreen />
+    <ForestRain />
     <!-- NeonTextScreen />
     <PhoneScreen />
     <FunnelScreen />

@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router';
-import HomeTop from './pages/HomeTop.vue';
+import HomeBottom from './pages/HomeBottom.vue';
 </script>
 
 <template>
-  <HomeTop />
+  <HomeBottom />
 </template>
 
 <style scoped></style>

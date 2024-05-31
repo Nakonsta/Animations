@@ -19,7 +19,7 @@
   0%
     background-position: 0 0
   100%
-    background-position: 8% 100%
+    background-position: 3% 100%
 
 @keyframes rain-opacity
   0%, 100%

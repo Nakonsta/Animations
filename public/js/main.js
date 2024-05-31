@@ -1,8 +1,8 @@
 const images = [
-  './images/1.jpg',
   './images/2.jpg',
-  './images/5.jpg',
+  './images/6.jpg',
   './images/4.jpg',
+  './images/7.jpg',
 ];
 const texts = [[''], [''], [''], ['']];
 
@@ -61,4 +61,21 @@ rgbKineticSlider = new rgbKineticSlider({
   textSubTitleLetterspacing: 2, // subtitle letter spacing
   textSubTitleOffsetTop: 90, // subtitle offset top
   mobileTextSubTitleOffsetTop: 90, // mobile subtitle offset top
+});
+
+const topArrow = document.querySelector('.kinetic .top');
+const bottomArrow = document.querySelector('.kinetic .bottom');
+
+topArrow.addEventListener('click', () => {
+  window.scrollBy({
+    top: -500,
+    behavior: 'smooth',
+  });
+});
+
+bottomArrow.addEventListener('click', () => {
+  window.scrollBy({
+    top: 500,
+    behavior: 'smooth',
+  });
 });

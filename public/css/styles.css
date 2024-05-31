@@ -1,3 +1,7 @@
+.kinetic {
+  position: relative;
+}
+
 .kinetic .slider {
   width: 100%;
   height: 100vh;
@@ -50,4 +54,26 @@
     top: auto;
     bottom: 3rem;
   }
+}
+
+.kinetic .top,
+.kinetic .bottom {
+  z-index: 5;
+  position: absolute;
+  bottom: 35px;
+  left: 52%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  padding: 10px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  transform: translate(-50%);
+}
+
+.kinetic .top {
+  left: 48%;
+  transform: translate(-50%) rotate(180deg);
 }

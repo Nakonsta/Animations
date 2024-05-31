@@ -1,6 +1,6 @@
 const images = [
-  'https://images.pexels.com/photos/3299173/pexels-photo-3299173.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
   'https://images.pexels.com/photos/3283124/pexels-photo-3283124.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
+  'https://images.pexels.com/photos/3299173/pexels-photo-3299173.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
   'https://images.pexels.com/photos/3283127/pexels-photo-3283127.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   'https://images.pexels.com/photos/1724374/pexels-photo-1724374.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   'https://images.pexels.com/photos/4611689/pexels-photo-4611689.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',

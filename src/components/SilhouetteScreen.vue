@@ -42,7 +42,8 @@ onMounted(() => {});
 .box
   position: relative
   width: 765px
-  height: 530px
+  // height: 530px
+  aspect-ratio: 1.4434
 
   &::after
     content: ''
@@ -55,13 +56,13 @@ onMounted(() => {});
 
   @media (max-width: 767px)
     width: 100%
-    height: 400px
+    // height: 400px
 
   @media (max-width: 575px)
-    height: 250px
+    // height: 250px
 
   @media (max-width: 360px)
-    height: 200px
+    // height: 200px
 
 
 .silhouette
